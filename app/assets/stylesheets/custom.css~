@@ -1,0 +1,60 @@
+.container {
+  width: 844px;
+  background: #fff;
+  margin: auto;
+  /* Just for added fluff! */
+  box-shadow: 8px 8px 5px #808080;
+  -webkit-box-shadow: 8px 8px 5px #808080;
+  -moz-box-shadow: 8px 8px 5px #808080;
+}
+
+body {
+  background-image: url("background.png")
+}
+
+header {
+  background: #ccc;
+  height: 95px;
+}
+
+/* MASTER TEMPLATE - NAVIGATION MENU */
+
+.navigation {
+  background: blue;
+}
+
+.navigation ul {
+  list-style: none;
+  text-align: center;
+}
+
+.navigation li {
+  display: inline;
+}
+
+.navigation li a {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navigation li a:visited {
+
+}
+
+.navigation li a:hover {
+  text-decoration: underline;
+}
+
+div#main_content {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* MASTER TEMPLATE - FOOTER */
+
+footer {
+  text-align: center;
+  background: #ccc;
+}
