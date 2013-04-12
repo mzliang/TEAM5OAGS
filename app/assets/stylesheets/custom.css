@@ -1,3 +1,8 @@
+/*************** GLOBAL ***************/
+h1, h2, h3, h4 {
+    color: #bb0000;
+}
+
 .container {
   width: 844px;
   background: #fff;
@@ -9,23 +14,59 @@
 }
 
 body {
-  background-image: url("background.png")
+  background-image: url("background.png");
+    font-family: Arial;
+    font-size: 12px;
 }
+
+/*************** MASTER TEMPLATE - HEADER ***************/
 
 header {
-  background: #ccc;
-  height: 95px;
+  background-image: url("header.png");
+  height: 115px;
 }
 
-/* MASTER TEMPLATE - NAVIGATION MENU */
+div#logo {
+    float: left;
+    width: 115px;
+}
 
+div#header_controls {
+  padding: 10px 10px 0 10px;
+    float: right;
+}
+
+div#login_controls {
+    text-align: right;
+    height: 38px;
+    color: white;
+}
+
+div#login_controls a {
+    text-decoration: none;
+    color: white;
+}
+
+div#login_controls a:hover {
+    text-decoration: underline;
+}
+
+div#login_controls a:visited {
+
+}
+
+/*************** MASTER TEMPLATE - NAVIGATION MENU ***************/
+
+div#navigation {
+    float: right;
+    padding: 0;
+}
 .navigation {
-  background: blue;
 }
 
 .navigation ul {
   list-style: none;
-  text-align: center;
+  text-align: right;
 }
 
 .navigation li {
@@ -52,9 +93,24 @@ div#main_content {
   padding-right: 10px;
 }
 
-/* MASTER TEMPLATE - FOOTER */
-
+/*************** MASTER TEMPLATE - FOOTER ***************/
+/* Note that the sum of the top padding and height must be 105, the height of the footer image */
 footer {
-  text-align: center;
-  background: #ccc;
+    padding-top: 11px;
+    text-align: center;
+    height: 94px;
+    background-image: url("footer.png");
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer a:visited {
+
 }

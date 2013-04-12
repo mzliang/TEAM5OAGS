@@ -3,7 +3,8 @@ Team5oags::Application.routes.draw do
   match '/gallery', :to => 'pages#gallery'
   match '/testimonials', :to => 'pages#testimonials'
   match '/contact', :to => 'pages#contact'
-  
+  match '/about_site', :to => 'pages#about_site'
+
   get "pages/home"
 
   get "pages/about"
@@ -14,6 +15,7 @@ Team5oags::Application.routes.draw do
 
   get "pages/contact"
 
+  get "pages/about_site"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   end
 
   def about
-    @title = "About Us"
+    @title = "About us"
   end
 
   def gallery
@@ -16,6 +16,10 @@ class PagesController < ApplicationController
   end
 
   def contact
-    @title = "Contact Us"
+    @title = "Contact us"
+  end
+
+  def about_site
+    @title = "About this site"
   end
 end
