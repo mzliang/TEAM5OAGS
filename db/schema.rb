@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130413201841) do
+ActiveRecord::Schema.define(:version => 20130413211116) do
 
   create_table "customers", :force => true do |t|
     t.string   "lastName"
@@ -34,5 +34,15 @@ ActiveRecord::Schema.define(:version => 20130413201841) do
   add_index "customers", ["email"], :name => "index_customers_on_email"
   add_index "customers", ["remember_token"], :name => "index_customers_on_remember_token"
   add_index "customers", ["username"], :name => "index_customers_on_username"
+
+  create_table "testimonials", :force => true do |t|
+    t.text     "testimonialContent"
+    t.integer  "customer_id"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+  end
+
+  add_index "testimonials", ["customer_id", "created_at"], :name => "index_testimonials_on_customer_id_and_created_at"
+  add_index "testimonials", ["testimonialContent"], :name => "index_testimonials_on_testimonialContent"
 
 end
