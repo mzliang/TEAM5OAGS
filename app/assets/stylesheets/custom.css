@@ -91,10 +91,6 @@ div#navigation {
   text-decoration: underline;
 }
 
-div#main_content {
-  padding-left: 10px;
-  padding-right: 10px;
-}
 
 /*************** MASTER TEMPLATE - FOOTER ***************/
 /* Note that the sum of the top padding and height must be 105, the height of the footer image */
@@ -116,5 +112,17 @@ footer a:hover {
 }
 
 footer a:visited {
+
+}
+
+
+/* MAIN CONTENT */
+
+.main_content {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.flexslider {
 
 }
