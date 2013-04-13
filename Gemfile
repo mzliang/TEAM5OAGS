@@ -10,9 +10,6 @@ group :development, :test do
 end
 
 
-<<<<<<< HEAD
-=======
-
 group :development do
 	gem 'annotate', '2.5.0'
 end
