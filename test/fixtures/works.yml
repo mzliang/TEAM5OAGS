@@ -3,11 +3,13 @@
 one:
   title: MyString
   medium: MyString
-  description: MyText
-  copy: 1
+  description: MyString
+  copy: MyString
+  artist_id: MyString
 
 two:
   title: MyString
   medium: MyString
-  description: MyText
-  copy: 1
+  description: MyString
+  copy: MyString
+  artist_id: MyString

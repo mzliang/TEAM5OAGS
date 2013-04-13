@@ -1,3 +1,5 @@
 class Work < ActiveRecord::Base
-  attr_accessible :copy, :description, :medium, :title
+  attr_accessible :artist_id, :copy, :description, :medium, :title
+
+  belongs_to :artists
 end
