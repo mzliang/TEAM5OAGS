@@ -11,7 +11,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130413211116) do
+ActiveRecord::Schema.define(:version => 20130413221221) do
+
+  create_table "artists", :force => true do |t|
+    t.string   "lastName"
+    t.string   "firstName"
+    t.string   "nationality"
+    t.date     "dateOfBirth"
+    t.date     "dateDeceased"
+    t.string   "username"
+    t.string   "email"
+    t.string   "password_digest"
+    t.string   "remember_token"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  add_index "artists", ["email"], :name => "index_artists_on_email"
+  add_index "artists", ["username"], :name => "index_artists_on_username"
 
   create_table "customers", :force => true do |t|
     t.string   "lastName"
@@ -44,5 +61,17 @@ ActiveRecord::Schema.define(:version => 20130413211116) do
 
   add_index "testimonials", ["customer_id", "created_at"], :name => "index_testimonials_on_customer_id_and_created_at"
   add_index "testimonials", ["testimonialContent"], :name => "index_testimonials_on_testimonialContent"
+
+  create_table "works", :force => true do |t|
+    t.string   "title"
+    t.string   "medium"
+    t.string   "description"
+    t.string   "copy"
+    t.integer  "artist_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "works", ["artist_id"], :name => "index_works_on_artist_id"
 
 end
