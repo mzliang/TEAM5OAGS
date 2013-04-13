@@ -10,14 +10,9 @@ group :development, :test do
 end
 
 
-<<<<<<< HEAD
-=======
-
 group :development do
 	gem 'annotate', '2.5.0'
 end
->>>>>>> 2564c938c7c0c176e99199d984125a4f15634569
-
 
 # Gems used only for assets and not required
 # in production environments by default.
