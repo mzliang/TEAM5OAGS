@@ -1,0 +1,12 @@
+Okay, here is the works assignments for the IMPLEMENTATION PHASE:
+
+Ryan Lee, Matthew Liang, Chris Berkowitz, Yash Jaradi => Controllers
+Chris Cruz, Muhammad Naviwala => Views
+Gabe Ohlson, Joel Loucks => Models
+
+But note that these areas assigned are the areas you need to CONCENTRATE on, not work on EXCLUSIVELY.
+EVERYBODY must promote COLLECTIVE OWNERSHIP of code otherwise INTEGRATION will be a HASSLE!!!
+
+Let's not LOOSE points for this part!!!
+
+DEADLINE for all working deliverables is Monday April 22!!
