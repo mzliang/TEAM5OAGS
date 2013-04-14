@@ -1,22 +1,23 @@
 class PagesController < ApplicationController
   def home
-    @title = "Home"
+    @title = 'Home'
   end
 
   def about
-    @title = "About us"
+    @title = 'About us'
   end
 
   def gallery
-    @title = "Gallery"
+    @title = 'Gallery'
   end
 
   def testimonials
-    @title = "Testimonials"
+    @title = 'Testimonials'
   end
 
   def contact
-    @title = "Contact us"
+    @title = 'Contact us'
+
   end
 
   def about_site
