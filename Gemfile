@@ -9,21 +9,10 @@ group :development, :test do
 	gem 'sqlite3'
 end
 
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 630d8276e11413a5d7156fc6d0a6d5bb5fef81a4
 group :development do
 	gem 'annotate', '2.5.0'
 end
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 630d8276e11413a5d7156fc6d0a6d5bb5fef81a4
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
