@@ -1,0 +1,26 @@
+<%= stylesheet_link_tag 'flexslider', :media => 'all' %>
+<%= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js' %>
+<%= javascript_include_tag 'jquery.flexslider.js' %>
+
+<script type="text/javascript" charset="utf-8">
+    $(window).load(function() {
+        $('.flexslider').flexslider();
+    });
+</script>
+
+<div class="flexslider">
+  <ul class="slides">
+    <li>
+      <%= image_tag('slide1.png')%>
+      <p class="flex-caption">Caption 1 goes here!</p>
+    </li>
+    <li>
+      <%= image_tag('slide2.png')%>
+      <p class="flex-caption">Caption 2 goes here!</p>
+    </li>
+    <li>
+      <%= image_tag('slide3.png')%>
+      <p class="flex-caption">Caption 3 goes here!</p>
+    </li>
+  </ul>
+</div>
