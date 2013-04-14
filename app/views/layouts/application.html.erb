@@ -8,11 +8,18 @@
 </head>
 <body>
 <div class="container">
-  <%= render 'layouts/header' %>
+  <% if @title == 'Sign up' || @title == 'Sign in' %>
+      <div class="user_forms">
+        <%= render 'layouts/login/login_header' %>
+        <%= yield %>
+        <%= render 'layouts/login/login_footer' %>
+      </div>
+  <% else %>
+    <%= render 'layouts/header' %>
+    <%= yield %>
+    <%= render 'layouts/footer' %>
+  <% end %>
 
-  <%= yield %>
-
-  <%= render 'layouts/footer' %>
 </div>
 </body>
 </html>

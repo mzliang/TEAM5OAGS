@@ -10,6 +10,19 @@ h1, h2, h3, h4 {
   margin: auto;
 }
 
+.user_forms {
+    width: 500px;
+    margin: auto;
+}
+
+.user_forms a {
+    color: black;
+    text-decoration: none;
+}
+
+.user_forms a:hover {
+    text-decoration: underline;
+}
 .login {
     width: 440px;
 }
@@ -31,13 +44,13 @@ header {
   height: 115px;
 }
 
-div#logo {
+.logo {
     padding: 10px 10px 10px 0;
     float: left;
     width: 115px;
 }
 
-div#header_controls {
+.header_controls {
    /* background-color: orange;*/
   padding: 10px 10px 0 10px;
     float: right;
