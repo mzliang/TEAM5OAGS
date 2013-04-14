@@ -1,0 +1,17 @@
+<!-- DEFAULT _default_header.html.erb -->
+<header>
+  <div id="logo">
+    <% logo = image_tag('team5logo.png', :alt => 'TEAM5OAGS') %>
+    <%= link_to logo, root_path %>
+  </div>
+  <div id="header_controls">
+    <!-- This login_controls div may be an AJAX template -->
+    <div id="login_controls">
+      <%= link_to 'Sign In', '#' %> | <%= link_to 'Register', '#' %>
+    </div>
+
+    <div id="navigation">
+      <%= render 'layouts/navigation' %>
+    </div>
+  </div>
+</header>

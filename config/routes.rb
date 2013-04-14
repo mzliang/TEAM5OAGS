@@ -1,4 +1,6 @@
 Team5oags::Application.routes.draw do
+  resources :customers
+
   match '/about', :to => 'pages#about'
   match '/gallery', :to => 'pages#gallery'
   match '/testimonials', :to => 'pages#testimonials'
