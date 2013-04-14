@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e9bddc8-aa28-41f5-88e8-3760a2adb763" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/customers/new.html.erb" afterPath="$PROJECT_DIR$/app/views/customers/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path="TEAM5OAGS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -15,7 +13,7 @@
     <file path="/about.html.erb" changelist="7e9bddc8-aa28-41f5-88e8-3760a2adb763" time="1365886782402" ignored="false" />
     <file path="/pages_controller.rb" changelist="7e9bddc8-aa28-41f5-88e8-3760a2adb763" time="1365897775248" ignored="false" />
     <file path="/about_site.erb" changelist="7e9bddc8-aa28-41f5-88e8-3760a2adb763" time="1365886699222" ignored="false" />
-    <file path="/routes.rb" changelist="7e9bddc8-aa28-41f5-88e8-3760a2adb763" time="1365735058899" ignored="false" />
+    <file path="/routes.rb" changelist="7e9bddc8-aa28-41f5-88e8-3760a2adb763" time="1365902880186" ignored="false" />
     <file path="/contact.html.erb" changelist="7e9bddc8-aa28-41f5-88e8-3760a2adb763" time="1365886718491" ignored="false" />
     <file path="/_navigation.html.erb" changelist="7e9bddc8-aa28-41f5-88e8-3760a2adb763" time="1365744273288" ignored="false" />
     <file path="/home.html.erb" changelist="7e9bddc8-aa28-41f5-88e8-3760a2adb763" time="1365893527751" ignored="false" />
@@ -61,19 +59,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="268" selection-end="268" vertical-scroll-proportion="-0.21587302">
+            <state line="31" column="0" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customer.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
+      <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="24" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
+            <state line="14" column="14" selection-start="416" selection-end="416" vertical-scroll-proportion="0.56398106">
               <folding />
             </state>
           </provider>
@@ -109,7 +107,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/pages/gallery.html.erb" />
         <option value="$PROJECT_DIR$/app/views/pages/contact.html.erb" />
         <option value="$PROJECT_DIR$/app/views/pages/about_site.erb" />
         <option value="$PROJECT_DIR$/app/views/pages/about.html.erb" />
@@ -125,6 +122,7 @@
         <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/customers/new.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
       </list>
     </option>
   </component>
@@ -184,6 +182,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="TEAM5OAGS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TEAM5OAGS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TEAM5OAGS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -400,7 +412,7 @@
       <recent name="C:\Users\Ryan\RubymineProjects\TEAM5OAGS\app\assets\stylesheets" />
     </key>
   </component>
-  <component name="RunManager" selected="Rake.routes">
+  <component name="RunManager" selected="Rake.db:migrate">
     <configuration default="false" name="routes" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
       <module name="TEAM5OAGS" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -414,6 +426,30 @@
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="routes" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="db:migrate" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="TEAM5OAGS" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="development" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:migrate" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
@@ -655,16 +691,18 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Rake.test" />
       <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
       <item index="2" class="java.lang.String" itemvalue="Rails.Production: TEAM5OAGS" />
       <item index="3" class="java.lang.String" itemvalue="Rails.Development: TEAM5OAGS" />
       <item index="4" class="java.lang.String" itemvalue="Rake.routes" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.db:migrate" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Rake.routes" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Rake.db:migrate" />
+        <item index="1" class="java.lang.String" itemvalue="Rake.routes" />
       </list>
     </recent_temporary>
   </component>
@@ -703,11 +741,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25075758" sideWeight="0.54911435" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25075758" sideWeight="0.72141707" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45088565" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27858293" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -774,11 +812,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/jquery.flexslider-min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/images/team5footer.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -831,23 +864,9 @@
         <state line="4" column="0" selection-start="193" selection-end="193" vertical-scroll-proportion="0.18994413" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="24" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="14" selection-start="253" selection-end="253" vertical-scroll-proportion="0.78061223" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/customers_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="22" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/customers/new.html.erb">
@@ -859,7 +878,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="268" selection-end="268" vertical-scroll-proportion="-0.21587302">
+        <state line="31" column="0" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/customers_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="22" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="24" selection-start="263" selection-end="263" vertical-scroll-proportion="0.37408313">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="14" selection-start="416" selection-end="416" vertical-scroll-proportion="0.56398106">
           <folding />
         </state>
       </provider>
