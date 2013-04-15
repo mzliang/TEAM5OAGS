@@ -7,7 +7,7 @@
    <!-- This login_controls div may be an AJAX template -->
    <% if signed_in? %>
       <div id="login_controls">
-     <%= link_to 'My Account', customer_path %> | <%= link_to 'Sign out', signout_path, method: "delete" %>
+     <%= link_to 'My Account', current_user %> | <%= link_to 'Sign out', signout_path, method: "delete" %>
    </div> 
    <% else %>
      <div id="login_controls">
