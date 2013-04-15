@@ -25,7 +25,7 @@ class Customer < ActiveRecord::Base
   has_many :testimonials, dependent: :destroy
   has_secure_password
 
-  before_save { |user| user.email = email.downcase }
+  before_save { |user| user.email = email.downcase, user.username = username.downcase }
 
   before_save :create_remember_token
 

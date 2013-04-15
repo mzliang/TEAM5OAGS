@@ -1,5 +1,7 @@
 Team5oags::Application.routes.draw do
+
   resources :customers
+  resources :sessions, only: [:new, :create, :destroy]
 
   match '/about', :to => 'pages#about'
   match '/gallery', :to => 'pages#gallery'
@@ -15,8 +17,10 @@ Team5oags::Application.routes.draw do
   get 'pages/about_site'
 
   match '/signup', :to => 'customers#new'
-  get 'customers/new'
 
+
+    match '/signin', :to => 'sessions#new'
+    match '/signout', :to => 'sessions#destroy', via: :delete
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
