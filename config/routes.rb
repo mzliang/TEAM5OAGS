@@ -2,12 +2,14 @@ Team5oags::Application.routes.draw do
 
   resources :customers
   resources :sessions, only: [:new, :create, :destroy]
+  resources :messages
 
   match '/about', :to => 'pages#about'
   match '/gallery', :to => 'pages#gallery'
   match '/testimonials', :to => 'pages#testimonials'
   match '/contact', :to => 'pages#contact'
   match '/about_site', :to => 'pages#about_site'
+  match '/chat', :to => 'messages#index'
 
   get 'pages/home'
   get 'pages/about'
@@ -15,6 +17,7 @@ Team5oags::Application.routes.draw do
   get 'pages/testimonials'
   get 'pages/contact'
   get 'pages/about_site'
+  get "messages/index"
 
   match '/signup', :to => 'customers#new'
 
