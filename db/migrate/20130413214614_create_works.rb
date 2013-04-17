@@ -9,6 +9,6 @@ class CreateWorks < ActiveRecord::Migration
 
       t.timestamps
     end
-    add_index :works, :artist_id, :email
+    add_index :works, :artist_id
   end
 end

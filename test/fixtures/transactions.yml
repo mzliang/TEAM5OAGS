@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  acquisitionPrice: 1.5
+  dateAcquired: 2013-04-17
+  salesPrice: 1.5
+  askingPrice: 1.5
+  dateSold: 2013-04-17
+  work_id: 1
+  customer_id: 1
+
+two:
+  acquisitionPrice: 1.5
+  dateAcquired: 2013-04-17
+  salesPrice: 1.5
+  askingPrice: 1.5
+  dateSold: 2013-04-17
+  work_id: 1
+  customer_id: 1

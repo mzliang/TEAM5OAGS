@@ -23,6 +23,7 @@
 class Customer < ActiveRecord::Base
   attr_accessible :username, :email, :areaCode, :city, :country, :firstName, :lastName, :phoneNumber, :state, :street, :zip, :password, :password_confirmation
   has_many :testimonials, dependent: :destroy
+  has_many :transactions
   has_secure_password
 
   before_save { |user| user.email = email.downcase, user.username = username.downcase }

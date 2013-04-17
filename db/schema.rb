@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130415155200) do
+ActiveRecord::Schema.define(:version => 20130417141935) do
 
   create_table "artists", :force => true do |t|
     t.string   "lastName"
@@ -76,6 +76,20 @@ ActiveRecord::Schema.define(:version => 20130415155200) do
 
   add_index "testimonials", ["customer_id", "created_at"], :name => "index_testimonials_on_customer_id_and_created_at"
   add_index "testimonials", ["testimonialContent"], :name => "index_testimonials_on_testimonialContent"
+
+  create_table "transactions", :force => true do |t|
+    t.float    "acquisitionPrice"
+    t.date     "dateAcquired"
+    t.float    "salesPrice"
+    t.float    "askingPrice"
+    t.date     "dateSold"
+    t.integer  "work_id"
+    t.integer  "customer_id"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
+
+  add_index "transactions", ["work_id", "customer_id"], :name => "index_transactions_on_work_id_and_customer_id"
 
   create_table "works", :force => true do |t|
     t.string   "title"
