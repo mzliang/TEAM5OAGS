@@ -16,4 +16,13 @@ class Testimonial < ActiveRecord::Base
   validates_presence_of :testimonialContent, presence: true, length: { maximum: 140 }
 
 
+ # search function to search testimonialContent
+  def self.search(search)
+  if search
+    find(:all, :conditions => ['testimonialContent LIKE ?', "%#{search}%"])
+  else
+    find(:all)
+  end
+end
+
 end
